@@ -15,6 +15,10 @@ vec * get_vec_instance(float x, float y, float z){
     return v;
 }
 
+vec * plus(vec *v1, vec *v2){
+    return get_vec_instance(v1->x +v2->x, v1->y + v2->y, v1->z + v2->z);
+}
+
 void scale(vec * v, int factor){
     v->x *= factor;
     v->y *= factor;
